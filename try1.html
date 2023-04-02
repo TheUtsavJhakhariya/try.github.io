@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #000000;
+        }
+        ul{
+            position: relative;
+            display: flex;
+            transform: rotate(-25deg) skew(25deg);
+            transform-style: preserve-3d;
+        }
+        ul li{
+            position: relative;
+            list-style: none;
+            width: 60px;
+            height: 60px;
+            margin: 0 55px;
+        }
+        ul li::before{
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: -5px;
+            width: 130px;                           /*----------width of card--------------*/
+            height: 10px;
+            background: #161616;
+            transform: skewX(-41deg);
+        }
+        ul li::after{
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: -9px;
+            width: 9px;
+            height: 100%;
+            background: #4b4b4b;
+            transform: skewY(-49deg) ;
+        }
+        ul li span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 130px;                           /*----------width of card--------------*/
+            height: 100%;
+            display: flex !important;
+            background: #272727;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 30px !important;
+        }
+        ul li:hover span{
+            z-index: 1000;
+            transition: 0.3s;
+            color: #fff;
+            box-shadow: -1px 1px 1px rgba(0,0,0,0.5);
+        }
+        ul li:hover span:nth-child(5){
+            transform: translate(40px, -40px);
+            opacity: 1;
+        }
+        ul li:hover span:nth-child(4){
+            transform: translate(30px, -30px);
+            opacity: 0.8;
+        }
+        ul li:hover span:nth-child(3){
+            transform: translate(20px, -20px);
+            opacity: 0.6;
+        }
+        ul li:hover span:nth-child(2){
+            transform: translate(10px, -10px);
+            opacity: 0.4;
+        }
+        ul li:hover span:nth-child(1){
+            transform: translate(0px, 0px);
+            opacity: 0.2;
+        }
+        ul li:nth-child(1):hover span{
+            background: #4377dd;
+        }
+        ul li:nth-child(2):hover span{
+            background: radial-gradient(at 20% 128%, #ffbb00 20%, #ff195e 60%, #f200ff 90%);
+        }
+        ul li:nth-child(3):hover span{
+            background: #08a0ff;
+        }
+        ul li:nth-child(4):hover span{
+            background: #ff0713;
+        }
+        ul li:nth-child(5):hover span{
+            background: #182642;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa-brands fa-facebook facebook"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa-brands fa-instagram instagram"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa-brands fa-twitter twitter"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa-brands fa-youtube youtube"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa-brands fa-linkedin linkedin"></span>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
